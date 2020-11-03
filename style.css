@@ -111,11 +111,70 @@ header {
   border: 1px solid black; }
 
 video {
-  height: 30vh;
+  height: 40vh;
   width: 100%;
   object-fit: cover;
   /* Funkar kanske inte på alla webbläsare? */ }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   video {
     height: 15vh; } }
+
+.section-2 {
+  position: relative;
+  border: 1px solid black; }
+
+.section2-img {
+  width: 50%; }
+
+.section2-p1 {
+  width: 40%;
+  position: absolute;
+  top: 20%;
+  left: 45%;
+  text-align: right; }
+
+.section2-p2 {
+  width: 40%;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  text-align: right; }
+
+.section-3 {
+  padding: 0 6rem; }
+
+.section3-p2 {
+  padding-top: 2rem; }
+
+@media (max-width: 700px) {
+  .section-3 {
+    padding: 0 3rem; }
+  .section3-p2 {
+    padding-top: 1rem; } }
+
+.section-4 {
+  padding-top: 10vh;
+  background: url(/bilder/Q1_newsletter-02.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 10vh; }
+
+.section4-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center; }
+
+.section4-h2 {
+  font-size: 2.5vw;
+  padding-bottom: 2rem; }
+
+.section4-p {
+  width: 60%; }
+
+@media (max-width: 700px) {
+  .section-4 {
+    padding-top: 5vh;
+    padding-bottom: 5vh; } }

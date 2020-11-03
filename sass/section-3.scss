@@ -1,0 +1,19 @@
+.section-3 {
+    padding:0 6rem;
+}
+
+
+.section3-p2 {
+padding-top:2rem;
+}
+
+@media (max-width:700px)  {
+
+    .section-3 {
+        padding:0 3rem;
+    }
+
+    .section3-p2 {
+        padding-top:1rem;
+        }
+}
