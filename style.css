@@ -1,13 +1,75 @@
+@charset "UTF-8";
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    color: grey;
-    box-sizing: border-box;
-    font-size: 16px;
-}
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 16px;
+  border-style: border-box;
+  color: #404040; }
 
+body {
+  background-color: #333; }
+
+p, strong {
+  font-size: 1.2vw; }
+
+h1, h2, h3 {
+  color: #383838; }
+
+/* för att få det att se ut som ett nyhetsbrev som ser bra ut på stora skärmar
+max-width är 900px sen går den över till 80% av sidan */
 .wrapper {
-    
-    width:70%;
-}
+  width: 80%;
+  max-width: 900px;
+  margin: auto;
+  background-color: white;
+  padding: 1rem; }
+
+.voodoo {
+  font-size: 25px;
+  font-size: 1.6vw;
+  text-align: center;
+  padding-top: 1rem;
+  position: relative;
+  bottom: 0.85rem; }
+
+.header-img {
+  width: 100%;
+  position: relative;
+  bottom: 2.8rem; }
+
+@media (min-width: 700px) {
+  .voodoo {
+    bottom: 0rem;
+    top: 1.2rem; } }
+
+.into-text {
+  position: relative; }
+
+.intro-h2 {
+  font-size: 2.8rem;
+  font-size: 2.5vw;
+  text-align: center;
+  position: relative;
+  bottom: 4.5rem;
+  left: 13%; }
+
+.intro-p1 {
+  text-align: center;
+  position: relative;
+  bottom: 3.5rem; }
+
+.intro-p2 {
+  text-align: center;
+  position: relative;
+  left: 9%;
+  bottom: 3.5rem; }
+
+@media (min-width: 750px) {
+  .intro-h2 {
+    bottom: 6.5rem; }
+  .intro-p1 {
+    bottom: 4.5rem; }
+  .intro-p2 {
+    bottom: 4.5rem;
+    left: 9%; } }

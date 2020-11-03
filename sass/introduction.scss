@@ -1,0 +1,46 @@
+.into-text {
+position:relative;
+   
+}
+
+.intro-h2 {
+    font-size:2.8rem;
+    font-size:2.5vw;
+    text-align:center;
+    position:relative;
+    bottom:4.5rem;
+    left:13%;
+    
+}
+
+.intro-p1 {
+    text-align:center;
+    position:relative;
+    bottom:3.5rem;
+
+
+}
+
+.intro-p2 {
+    text-align:center;
+    position:relative;
+    left:9%;
+    bottom:3.5rem;
+
+}
+
+
+
+@media (min-width:750px)  {
+    .intro-h2 {
+    bottom:6.5rem;
+    }
+    .intro-p1 {
+        bottom:4.5rem;
+    }
+    .intro-p2 {
+        bottom:4.5rem;
+        left:9%;}
+
+}
+

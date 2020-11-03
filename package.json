@@ -1,0 +1,23 @@
+{
+  "name": "testuppgift1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass sass/main.scss style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ollenilsson1/responsive.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ollenilsson1/responsive/issues"
+  },
+  "homepage": "https://github.com/ollenilsson1/responsive#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
