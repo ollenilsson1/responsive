@@ -1,0 +1,18 @@
+.video-section {
+    display:flex;
+    justify-content:center;
+    border:1px solid black;
+}
+
+video {
+    height:30vh;
+    width:100%;
+    object-fit: cover;   /* Funkar kanske inte på alla webbläsare? */
+
+}
+
+@media (max-width:600px)  {
+    video {
+        height:15vh;
+    }
+}
