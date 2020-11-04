@@ -23,7 +23,7 @@ max-width är 900px sen går den över till 80% av sidan */
   max-width: 900px;
   margin: auto;
   background-color: white;
-  padding: 1rem; }
+  padding: 0.5rem; }
 
 .voodoo {
   font-size: 25px;
@@ -37,9 +37,6 @@ max-width är 900px sen går den över till 80% av sidan */
   width: 100%;
   position: relative;
   bottom: 2.8rem; }
-
-header {
-  border: 1px solid green; }
 
 @media (min-width: 700px) {
   .voodoo {
@@ -80,8 +77,7 @@ header {
 .section-1 {
   position: relative;
   width: 100%;
-  padding-bottom: 15%;
-  border: 1px solid red; }
+  padding-bottom: 15%; }
 
 .section1-text {
   width: 40%;
@@ -120,9 +116,9 @@ video {
   video {
     height: 15vh; } }
 
+/* SER FORTFARANDE INTE BRA UT 1300px uppåt */
 .section-2 {
-  position: relative;
-  border: 1px solid black; }
+  position: relative; }
 
 .section2-img {
   width: 50%; }
@@ -179,6 +175,7 @@ video {
     padding-top: 5vh;
     padding-bottom: 5vh; } }
 
+/* FOOTER FÖR STOR I MOBILFORMAT */
 footer {
   background-color: #2b2e34;
   display: flex;

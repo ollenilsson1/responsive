@@ -2,7 +2,7 @@
     position:relative;
     width:100%;
     padding-bottom:15%;
-    border:1px solid red;
+    
     
 }
 
@@ -20,7 +20,7 @@
     top:-33%;
 }
 
-
+/* 1160px så börjar mobilbilden flyttas uppåt */
 
 @media (min-width:700px)  {
     .section1-img {
