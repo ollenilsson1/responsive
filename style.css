@@ -13,6 +13,7 @@ body {
 p, strong {
   font-size: 1.2vw; }
 
+/* Lägg fontsize på alla i viewwidth */
 h1, h2, h3 {
   color: #383838; }
 
@@ -79,6 +80,7 @@ max-width är 900px sen går den över till 80% av sidan */
   width: 100%;
   padding-bottom: 15%; }
 
+/* Lägg till vw på h3 */
 .section1-text {
   width: 40%;
   padding-left: 20%; }
@@ -89,17 +91,22 @@ max-width är 900px sen går den över till 80% av sidan */
   left: 50%;
   top: -33%; }
 
+/* 1160px så börjar mobilbilden flyttas uppåt */
+@media (max-width: 600px) {
+  .section1-img {
+    top: -17%; }
+  .section-1 {
+    padding-bottom: 35%; } }
+
 @media (min-width: 700px) {
   .section1-img {
     top: -20%; }
   .section-1 {
     padding-bottom: 35%; } }
 
-@media (max-width: 600px) {
+@media (min-width: 1380px) {
   .section1-img {
-    top: -17%; }
-  .section-1 {
-    padding-bottom: 35%; } }
+    top: -14%; } }
 
 .video-section {
   display: flex;
@@ -116,7 +123,7 @@ video {
   video {
     height: 15vh; } }
 
-/* SER FORTFARANDE INTE BRA UT 1300px uppåt */
+/* Texten flyter ihop i 1420px uppåt */
 .section-2 {
   position: relative; }
 
@@ -149,13 +156,23 @@ video {
   .section3-p2 {
     padding-top: 1rem; } }
 
+@media (min-width: 1200px) {
+  .section-3 {
+    padding: 0 9rem; }
+  .section3-p2 {
+    padding-top: 3rem; } }
+
+/* span {
+    display:inline-block;
+    height:5%;
+} */
 .section-4 {
-  padding-top: 10vh;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
   background: url(/bilder/Q1_newsletter-02.png);
   background-position: top;
   background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 10vh; }
+  background-size: cover; }
 
 .section4-text {
   display: flex;
@@ -170,12 +187,18 @@ video {
 .section4-p {
   width: 60%; }
 
+/* För att få bakgrunden att anpassa sig efter enhet */
 @media (max-width: 700px) {
   .section-4 {
     padding-top: 5vh;
     padding-bottom: 5vh; } }
 
-/* FOOTER FÖR STOR I MOBILFORMAT */
+@media (min-width: 1200px) {
+  .section-4 {
+    padding-top: 10vh;
+    padding-bottom: 10vh; } }
+
+/* FOOTER FÖR STOR I 1400px uppåt */
 footer {
   background-color: #2b2e34;
   display: flex;
@@ -207,3 +230,13 @@ footer h3, footer p {
 
 .footert2p1, .footert2p2 {
   text-align: right; }
+
+@media (max-width: 600px) {
+  footer {
+    padding: 1.5rem 0; }
+  .text2-footer {
+    padding-top: 1rem; }
+  .footert1p1 {
+    padding-bottom: 0.25rem; }
+  .footert2p1 {
+    padding-bottom: 0.25rem; } }

@@ -1,10 +1,11 @@
 .section-4 {
-    padding-top: 10vh;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
     background: url(/bilder/Q1_newsletter-02.png);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 10vh;
+    
 }
 
 .section4-text {
@@ -23,9 +24,18 @@
     width:60%;
 }
 
+/* För att få bakgrunden att anpassa sig efter enhet */
+
 @media (max-width:700px)  {
     .section-4 {
         padding-top: 5vh;
         padding-bottom: 5vh;
+    }
+}
+
+@media (min-width:1200px)  {
+    .section-4 {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
     }
 }

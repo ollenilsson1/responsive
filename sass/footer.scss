@@ -1,5 +1,5 @@
 
-/* FOOTER FÖR STOR I MOBILFORMAT */
+/* FOOTER FÖR STOR I 1400px uppåt */
 
 footer {
     background-color:#2b2e34;
@@ -8,6 +8,7 @@ footer {
     justify-content: space-around;
     padding:3rem 0;
 }
+
 
 footer h3, footer p {
     color:white;
@@ -40,4 +41,25 @@ footer h3, footer p {
 
 .footert2p1 , .footert2p2 {
     text-align:right;
+}
+
+@media (max-width:600px) {
+    
+    footer {
+        padding:1.5rem 0;
+    } 
+
+    .text2-footer {
+        padding-top:1rem;
+    }
+    
+    .footert1p1 {
+        padding-bottom: 0.25rem;
+    }
+
+    .footert2p1 {
+        padding-bottom: 0.25rem;
+    }
+
+    
 }

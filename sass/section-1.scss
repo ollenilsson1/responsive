@@ -6,7 +6,7 @@
     
 }
 
-
+/* Lägg till vw på h3 */
 
 .section1-text {
     width:40%;
@@ -22,6 +22,17 @@
 
 /* 1160px så börjar mobilbilden flyttas uppåt */
 
+
+
+@media (max-width:600px)  {
+    .section1-img {
+        top:-17%;
+    }
+    .section-1 {
+        padding-bottom: 35%;
+    }
+}
+
 @media (min-width:700px)  {
     .section1-img {
         top:-20%;
@@ -31,11 +42,10 @@
     }
 }
 
-@media (max-width:600px)  {
+@media (min-width:1380px) {
     .section1-img {
-        top:-17%;
+        top:-14%;
     }
-    .section-1 {
-        padding-bottom: 35%;
-    }
+
+
 }
