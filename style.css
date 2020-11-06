@@ -108,7 +108,6 @@ max-width är 900px sen går den över till 80% av sidan */
   width: 100%;
   padding-bottom: 15%; }
 
-/* Lägg till vw på h3 */
 .section1-text {
   width: 40%;
   padding-left: 20%; }
@@ -119,7 +118,7 @@ max-width är 900px sen går den över till 80% av sidan */
   left: 50%;
   top: -33%; }
 
-/* 1160px så börjar mobilbilden flyttas uppåt */
+/* Media queries för att få mobilen och section 1 responsive */
 @media (max-width: 600px) {
   .section1-img {
     top: -17%; }
@@ -132,9 +131,13 @@ max-width är 900px sen går den över till 80% av sidan */
   .section-1 {
     padding-bottom: 35%; } }
 
+@media (min-width: 1280px) {
+  .section-1 {
+    padding-bottom: 25%; } }
+
 @media (min-width: 1380px) {
   .section1-img {
-    top: -14%; } }
+    top: -16%; } }
 
 .video-section {
   display: flex;
