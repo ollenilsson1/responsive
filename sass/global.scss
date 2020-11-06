@@ -11,15 +11,60 @@ body {
     background-color:#333;
 }
 
+/* 1rem bara om webbläsarn inte klarar av vw */
+
 p, strong{
+    font-size:1rem;
     font-size:1.2vw;
 }
 
-/* Lägg fontsize på alla i viewwidth */
+/* Flyttar runt bilderna om den används
+
+@media screen and (max-width:700px) {
+
+    p, strong{
+        font-size:2vw;
+    }
+
+}  */
+
+@media screen and (min-width:1280px) {
+
+    p, strong{
+        font-size:1rem;
+    }
+}
+
 
 h1, h2, h3 {
     color:#383838;
 }
+
+h2 {
+    font-size:2.0rem;
+    font-size:2.5vw;
+}
+
+@media screen and (min-width:1280px) {
+
+    h2 {
+        font-size:2rem;
+    }
+}
+
+h3 {
+    font-size:1.4rem;
+    font-size:2vw;
+}
+
+@media screen and (min-width:1280px) {
+
+    h3 {
+        font-size:1.4rem;
+    }
+}
+
+
 
 /* för att få det att se ut som ett nyhetsbrev som ser bra ut på stora skärmar
 max-width är 900px sen går den över till 80% av sidan */
