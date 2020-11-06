@@ -98,7 +98,7 @@ max-width är 900px sen går den över till 80% av sidan */
   .section-1 {
     padding-bottom: 35%; } }
 
-@media (min-width: 700px) {
+@media (min-width: 601px) {
   .section1-img {
     top: -20%; }
   .section-1 {
@@ -130,42 +130,32 @@ video {
 .section2-img {
   width: 50%; }
 
-.section2-p1 {
+.section2-p {
   width: 40%;
   position: absolute;
   top: 20%;
   left: 45%;
   text-align: right; }
 
-.section2-p2 {
-  width: 40%;
-  position: absolute;
-  top: 40%;
-  left: 45%;
-  text-align: right; }
+.section2-span {
+  display: inline-block;
+  width: 100%;
+  height: 5%;
+  border: 1px solid red; }
 
 .section-3 {
   padding: 0 6rem; }
 
-.section3-p2 {
-  padding-top: 2rem; }
+.section3-span {
+  display: inline-block;
+  border: 1px solid red;
+  width: 100%;
+  height: 5%; }
 
 @media (max-width: 700px) {
   .section-3 {
-    padding: 0 3rem; }
-  .section3-p2 {
-    padding-top: 1rem; } }
+    padding: 0 3rem; } }
 
-@media (min-width: 1200px) {
-  .section-3 {
-    padding: 0 9rem; }
-  .section3-p2 {
-    padding-top: 3rem; } }
-
-/* span {
-    display:inline-block;
-    height:5%;
-} */
 .section-4 {
   padding-top: 8vh;
   padding-bottom: 8vh;
