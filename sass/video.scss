@@ -1,18 +1,27 @@
 .video-section {
     display:flex;
     justify-content:center;
-    border:1px solid black;
 }
 
 video {
-    height:40vh;
+    height:30vh;
     width:100%;
     object-fit: cover;   /* Funkar kanske inte på alla webbläsare? */
 
 }
 
-@media (max-width:700px)  {
+/* mindre för mobil */
+
+@media (max-width:420px)  {
     video {
-        height:15vh;
+        height:18vh;
+    }
+}
+
+/* för stora skärmar */
+
+@media (min-width:1200px)  {
+    video {
+        height:45vh;
     }
 }

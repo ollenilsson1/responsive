@@ -3,12 +3,16 @@
     padding:0;
     font-family: 'Open Sans',sans-serif;
     font-size: 16px;
-    border-style:border-box;
+    box-sizing: border-box;
     color: #404040;
 }
 
 body {
     background-color:#333;
+}
+
+h1, h2, h3 {
+    color:#383838;
 }
 
 /* 1rem bara om webbläsarn inte klarar av vw */
@@ -18,15 +22,10 @@ p, strong{
     font-size:1.2vw;
 }
 
-/* Flyttar runt bilderna om den används
+strong {
+    font-weight: 600;
+}
 
-@media screen and (max-width:700px) {
-
-    p, strong{
-        font-size:2vw;
-    }
-
-}  */
 
 @media screen and (min-width:1280px) {
 
@@ -35,26 +34,31 @@ p, strong{
     }
 }
 
-
-h1, h2, h3 {
-    color:#383838;
+h1 {
+    font-family:sans-serif;
+    font-size:1.2rem;
+    font-size:1.4vw;
+    font-weight: 600;
 }
 
+
 h2 {
-    font-size:2.0rem;
-    font-size:2.5vw;
+    font-size:2.5rem;
+    font-size:3.4vw;
+    font-weight: 800;
 }
 
 @media screen and (min-width:1280px) {
 
     h2 {
-        font-size:2rem;
+        font-size:2.5rem;
     }
 }
 
 h3 {
     font-size:1.4rem;
-    font-size:2vw;
+    font-size:2.2vw;
+    font-weight: 800;
 }
 
 @media screen and (min-width:1280px) {
@@ -74,5 +78,4 @@ max-width är 900px sen går den över till 80% av sidan */
     max-width:900px;
     margin:auto;
     background-color:white;
-    padding:0.5rem;
 }

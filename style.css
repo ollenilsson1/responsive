@@ -4,44 +4,46 @@
   padding: 0;
   font-family: 'Open Sans',sans-serif;
   font-size: 16px;
-  border-style: border-box;
+  box-sizing: border-box;
   color: #404040; }
 
 body {
   background-color: #333; }
+
+h1, h2, h3 {
+  color: #383838; }
 
 /* 1rem bara om webbläsarn inte klarar av vw */
 p, strong {
   font-size: 1rem;
   font-size: 1.2vw; }
 
-/* Flyttar runt bilderna om den används
+strong {
+  font-weight: 600; }
 
-@media screen and (max-width:700px) {
-
-    p, strong{
-        font-size:2vw;
-    }
-
-}  */
 @media screen and (min-width: 1280px) {
   p, strong {
     font-size: 1rem; } }
 
-h1, h2, h3 {
-  color: #383838; }
+h1 {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  font-size: 1.4vw;
+  font-weight: 600; }
 
 h2 {
-  font-size: 2.0rem;
-  font-size: 2.5vw; }
+  font-size: 2.5rem;
+  font-size: 3.4vw;
+  font-weight: 800; }
 
 @media screen and (min-width: 1280px) {
   h2 {
-    font-size: 2rem; } }
+    font-size: 2.5rem; } }
 
 h3 {
   font-size: 1.4rem;
-  font-size: 2vw; }
+  font-size: 2.2vw;
+  font-weight: 800; }
 
 @media screen and (min-width: 1280px) {
   h3 {
@@ -53,8 +55,7 @@ max-width är 900px sen går den över till 80% av sidan */
   width: 80%;
   max-width: 900px;
   margin: auto;
-  background-color: white;
-  padding: 0.5rem; }
+  background-color: white; }
 
 .voodoo {
   font-size: 25px;
@@ -69,10 +70,10 @@ max-width är 900px sen går den över till 80% av sidan */
   position: relative;
   bottom: 2.8rem; }
 
-@media (min-width: 700px) {
+@media screen and (min-width: 700px) {
   .voodoo {
     bottom: 0rem;
-    top: 1.2rem; } }
+    top: 0.8rem; } }
 
 .into-text {
   position: relative; }
@@ -110,49 +111,102 @@ max-width är 900px sen går den över till 80% av sidan */
 
 .section1-text {
   width: 40%;
-  padding-left: 20%; }
+  position: relative;
+  left: 20%; }
 
 .section1-img {
   position: absolute;
   width: 50%;
   left: 50%;
-  top: -33%; }
+  top: -20%; }
+
+.section1-span {
+  display: inline-block;
+  width: 100%;
+  height: 5%; }
+
+/* .section-1 {
+    position:relative;
+    width:100%;
+    padding-bottom:15%;
+    
+    
+}
+
+
+.section1-text {
+    width:40%;
+    padding-left:20%;
+    border:1px solid red;
+}
+
+.section1-img {
+    position:absolute;
+    width:50%;
+    left:50%;
+    top:-33%;
+}
+
+.section1-span {
+    display:inline-block;
+    width:100%;
+    height:5%;
+} 
 
 /* Media queries för att få mobilen och section 1 responsive */
-@media (max-width: 600px) {
-  .section1-img {
-    top: -17%; }
-  .section-1 {
-    padding-bottom: 35%; } }
+/* 
 
-@media (min-width: 601px) {
-  .section1-img {
-    top: -20%; }
-  .section-1 {
-    padding-bottom: 35%; } }
+@media screen and (max-width:600px)  {
+    .section1-img {
+        top:-17%;
+    }
+    .section-1 {
+        padding-bottom: 20%;
+    }
+}
 
-@media (min-width: 1280px) {
-  .section-1 {
-    padding-bottom: 25%; } }
+@media screen and (min-width:601px)  {
+    .section1-img {
+        top:-20%;
+    }
+    .section-1 {
+        padding-bottom: 20%;
+    }
+}
 
-@media (min-width: 1380px) {
-  .section1-img {
-    top: -16%; } }
+@media screen and (min-width:1280px) {
+    .section-1 {
+        padding-bottom:10%;
+    }
+}
 
+@media screen and (min-width:1380px) {
+    .section1-img {
+        top:-16%;
+    }
+    
+
+
+} */
 .video-section {
   display: flex;
-  justify-content: center;
-  border: 1px solid black; }
+  justify-content: center; }
 
 video {
-  height: 40vh;
+  height: 30vh;
   width: 100%;
   object-fit: cover;
   /* Funkar kanske inte på alla webbläsare? */ }
 
-@media (max-width: 700px) {
+/* mindre för mobil */
+@media (max-width: 420px) {
   video {
-    height: 15vh; } }
+    height: 18vh; } }
+
+/* för stora skärmar */
+@media (min-width: 1200px) {
+  video {
+    height: 45vh; } }
 
 /* Texten flyter ihop i 1420px uppåt */
 .section-2 {
@@ -181,11 +235,12 @@ video {
   width: 100%;
   height: 5%; }
 
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
   .section-3 {
     padding: 0 3rem; } }
 
 .section-4 {
+  position: relative;
   padding-top: 8vh;
   padding-bottom: 8vh;
   background: url(/bilder/Q1_newsletter-02.png);
@@ -194,29 +249,35 @@ video {
   background-size: cover; }
 
 .section4-text {
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  width: 60%;
+  left: 20%;
   text-align: center;
-  align-items: center; }
+  padding-top: 2rem; }
 
 .section4-h2 {
   padding-bottom: 2rem; }
 
-.section4-p {
-  width: 60%; }
-
 /* För att få bakgrunden att anpassa sig efter enhet */
-@media (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .section-4 {
-    padding-top: 5vh;
-    padding-bottom: 5vh; } }
+    padding-top: 2vh;
+    padding-bottom: 2vh; }
+  .section4-h2 {
+    padding-bottom: 1rem; } }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 601px) {
   .section-4 {
-    padding-top: 10vh;
-    padding-bottom: 10vh; } }
+    padding-top: 6vh;
+    padding-bottom: 6vh; } }
 
-/* FOOTER FÖR STOR I 1400px uppåt */
+@media screen and (min-width: 1000px) {
+  .section-4 {
+    padding-top: 11vh;
+    padding-bottom: 11vh; }
+  .section4-h2 {
+    padding-bottom: 3rem; } }
+
 footer {
   background-color: #2b2e34;
   display: flex;
@@ -226,6 +287,9 @@ footer {
 
 footer h3, footer p {
   color: white; }
+
+.footert2p1, .footert2p2 {
+  font-style: italic; }
 
 .text1-footer {
   width: 30%; }
@@ -248,12 +312,14 @@ footer h3, footer p {
 .footert2p1, .footert2p2 {
   text-align: right; }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
   footer {
     padding: 1.5rem 0; }
   .text2-footer {
     padding-top: 1rem; }
-  .footert1p1 {
-    padding-bottom: 0.25rem; }
-  .footert2p1 {
-    padding-bottom: 0.25rem; } }
+  .text2-footer {
+    padding-top: 1.5rem; } }
+
+@media screen and (min-width: 900px) {
+  .text2-footer {
+    padding-top: 2.5rem; } }

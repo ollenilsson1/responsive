@@ -1,6 +1,4 @@
 
-/* FOOTER FÖR STOR I 1400px uppåt */
-
 footer {
     background-color:#2b2e34;
     display:flex;
@@ -12,6 +10,10 @@ footer {
 
 footer h3, footer p {
     color:white;
+}
+
+.footert2p1, .footert2p2 {
+    font-style:italic;
 }
 
 .text1-footer {
@@ -42,7 +44,7 @@ footer h3, footer p {
     text-align:right;
 }
 
-@media (max-width:600px) {
+@media screen and (max-width:600px) {
     
     footer {
         padding:1.5rem 0;
@@ -50,15 +52,20 @@ footer h3, footer p {
 
     .text2-footer {
         padding-top:1rem;
+        
     }
     
-    .footert1p1 {
-        padding-bottom: 0.25rem;
+    .text2-footer {
+        padding-top:1.5rem;
+    }
+ 
+}
+
+@media screen and (min-width:900px) {
+
+    .text2-footer {
+        padding-top:2.5rem;
+        
     }
 
-    .footert2p1 {
-        padding-bottom: 0.25rem;
-    }
-
-    
 }
