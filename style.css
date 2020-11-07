@@ -147,7 +147,7 @@ video {
 /* för stora skärmar */
 @media (min-width: 1200px) {
   video {
-    height: 45vh; } }
+    height: 50vh; } }
 
 .section-2 {
   position: relative; }
