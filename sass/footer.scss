@@ -1,62 +1,53 @@
-
 footer {
-    background-color:#2b2e34;
-    display:flex;
+    background-color: #2b2e34;
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding:3rem 0;
+    padding: 3rem 0;
 }
 
-
 footer h3, footer p {
-    color:white;
+    color: white;
 }
 
 .footert2p1, .footert2p2 {
-    font-style:italic;
+    font-style: italic;
 }
 
 .text1-footer {
-    width:30%;
+    width: 30%;
 }
 
 .text2-footer {
-    width:30%;
+    width: 30%;
 }
 
-.footer-h3 {
-    padding-bottom: 0.5rem;
-}
-
-.footert1p1 {
+.footer-h3, .footert1p1, .footert2p1 {
     padding-bottom: 0.5rem;
 }
 
 .text2-footer {
-    padding-top:2rem;
-}
-
-.footert2p1 {
-    padding-bottom: 0.5rem;
+    padding-top: 2rem;
 }
 
 .footert2p1 , .footert2p2 {
-    text-align:right;
+    text-align: right;
 }
+
+/* För att anpassa footern efter mobil och större skärmar */
 
 @media screen and (max-width:600px) {
     
     footer {
-        padding:1.5rem 0;
+        padding: 1.5rem 0;
     } 
 
     .text2-footer {
-        padding-top:1rem;
-        
+        padding-top: 1rem; 
     }
     
     .text2-footer {
-        padding-top:1.5rem;
+        padding-top: 1.5rem;
     }
  
 }
@@ -64,8 +55,7 @@ footer h3, footer p {
 @media screen and (min-width:900px) {
 
     .text2-footer {
-        padding-top:2.5rem;
-        
+        padding-top: 2.5rem;
     }
 
 }

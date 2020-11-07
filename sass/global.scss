@@ -1,6 +1,6 @@
 * {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     font-family: 'Open Sans',sans-serif;
     font-size: 16px;
     box-sizing: border-box;
@@ -8,18 +8,28 @@
 }
 
 body {
-    background-color:#333;
+    background-color: #333;
+}
+
+/* för att få det att se ut som ett nyhetsbrev som ser bra ut på stora skärmar
+max-width är 900px sen går den över till 80% av sidan */
+
+.wrapper {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
 }
 
 h1, h2, h3 {
-    color:#383838;
+    color: #383838;
 }
 
-/* 1rem bara om webbläsarn inte klarar av vw */
+/* Font-size rem används bara om webbläsarn inte klarar av vw */
 
 p, strong{
-    font-size:1rem;
-    font-size:1.2vw;
+    font-size: 1rem;
+    font-size: 1.2vw;
 }
 
 strong {
@@ -27,55 +37,54 @@ strong {
 }
 
 
-@media screen and (min-width:1280px) {
-
-    p, strong{
-        font-size:1rem;
-    }
-}
-
 h1 {
-    font-family:sans-serif;
-    font-size:1.2rem;
-    font-size:1.4vw;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    font-size: 1.4vw;
     font-weight: 600;
 }
 
 
 h2 {
-    font-size:2.5rem;
-    font-size:3.4vw;
+    font-size: 2.5rem;
+    font-size: 3.4vw;
     font-weight: 800;
 }
+
+
+
+h3 {
+    font-size: 1.4rem;
+    font-size: 2.2vw;
+    font-weight: 800;
+}
+
+
+/* För att texten inte ska bli för stor på större skärmar */
+
+@media screen and (min-width:1280px) {
+
+    p, strong{
+        font-size: 1rem;
+    }
+}
+
 
 @media screen and (min-width:1280px) {
 
     h2 {
-        font-size:2.5rem;
+        font-size: 2.5rem;
     }
 }
 
-h3 {
-    font-size:1.4rem;
-    font-size:2.2vw;
-    font-weight: 800;
-}
+
 
 @media screen and (min-width:1280px) {
 
     h3 {
-        font-size:1.4rem;
+        font-size: 1.4rem;
     }
 }
 
 
 
-/* för att få det att se ut som ett nyhetsbrev som ser bra ut på stora skärmar
-max-width är 900px sen går den över till 80% av sidan */
-
-.wrapper {
-    width:80%;
-    max-width:900px;
-    margin:auto;
-    background-color:white;
-}

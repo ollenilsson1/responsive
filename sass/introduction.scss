@@ -1,44 +1,46 @@
 .into-text {
-position:relative;
+position: relative;
 }
 
 .intro-h2 {
-    text-align:center;
-    position:relative;
-    bottom:4.5rem;
-    left:13%;
-    
-    
+    text-align: center;
+    position: relative;
+    bottom: 4.5rem;
+    left: 13%;   
 }
 
 .intro-p1 {
-    text-align:center;
-    position:relative;
-    bottom:3.5rem;
-
-
+    text-align: center;
+    position: relative;
+    bottom: 3.5rem;
 }
 
 .intro-p2 {
-    text-align:center;
-    position:relative;
-    left:9%;
-    bottom:3.5rem;
+    text-align: center;
+    position: relative;
+    left: 9%;
+    bottom: 3.5rem;
 
 }
 
-
-
-@media (min-width:750px)  {
+@media screen and (min-width:750px)  {
     .intro-h2 {
-    bottom:6.5rem;
+    bottom: 6.5rem;
     }
     .intro-p1 {
-        bottom:4.5rem;
+        bottom: 4.5rem;
     }
     .intro-p2 {
-        bottom:4.5rem;
-        left:9%;}
+        bottom: 4.5rem;
+        left: 9%;
+    }
 
 }
+
+@media screen and (min-width:1200px)  {
+    .intro-p2 {
+        left: 11%;
+    }
+}
+
 

@@ -10,20 +10,24 @@
 body {
   background-color: #333; }
 
+/* för att få det att se ut som ett nyhetsbrev som ser bra ut på stora skärmar
+max-width är 900px sen går den över till 80% av sidan */
+.wrapper {
+  width: 80%;
+  max-width: 900px;
+  margin: auto;
+  background-color: white; }
+
 h1, h2, h3 {
   color: #383838; }
 
-/* 1rem bara om webbläsarn inte klarar av vw */
+/* Font-size rem används bara om webbläsarn inte klarar av vw */
 p, strong {
   font-size: 1rem;
   font-size: 1.2vw; }
 
 strong {
   font-weight: 600; }
-
-@media screen and (min-width: 1280px) {
-  p, strong {
-    font-size: 1rem; } }
 
 h1 {
   font-family: sans-serif;
@@ -36,29 +40,26 @@ h2 {
   font-size: 3.4vw;
   font-weight: 800; }
 
-@media screen and (min-width: 1280px) {
-  h2 {
-    font-size: 2.5rem; } }
-
 h3 {
   font-size: 1.4rem;
   font-size: 2.2vw;
   font-weight: 800; }
 
+/* För att texten inte ska bli för stor på större skärmar */
+@media screen and (min-width: 1280px) {
+  p, strong {
+    font-size: 1rem; } }
+
+@media screen and (min-width: 1280px) {
+  h2 {
+    font-size: 2.5rem; } }
+
 @media screen and (min-width: 1280px) {
   h3 {
     font-size: 1.4rem; } }
 
-/* för att få det att se ut som ett nyhetsbrev som ser bra ut på stora skärmar
-max-width är 900px sen går den över till 80% av sidan */
-.wrapper {
-  width: 80%;
-  max-width: 900px;
-  margin: auto;
-  background-color: white; }
-
 .voodoo {
-  font-size: 25px;
+  font-size: 1.56rem;
   font-size: 1.6vw;
   text-align: center;
   padding-top: 1rem;
@@ -95,7 +96,7 @@ max-width är 900px sen går den över till 80% av sidan */
   left: 9%;
   bottom: 3.5rem; }
 
-@media (min-width: 750px) {
+@media screen and (min-width: 750px) {
   .intro-h2 {
     bottom: 6.5rem; }
   .intro-p1 {
@@ -103,6 +104,10 @@ max-width är 900px sen går den över till 80% av sidan */
   .intro-p2 {
     bottom: 4.5rem;
     left: 9%; } }
+
+@media screen and (min-width: 1200px) {
+  .intro-p2 {
+    left: 11%; } }
 
 .section-1 {
   position: relative;
@@ -125,69 +130,6 @@ max-width är 900px sen går den över till 80% av sidan */
   width: 100%;
   height: 5%; }
 
-/* .section-1 {
-    position:relative;
-    width:100%;
-    padding-bottom:15%;
-    
-    
-}
-
-
-.section1-text {
-    width:40%;
-    padding-left:20%;
-    border:1px solid red;
-}
-
-.section1-img {
-    position:absolute;
-    width:50%;
-    left:50%;
-    top:-33%;
-}
-
-.section1-span {
-    display:inline-block;
-    width:100%;
-    height:5%;
-} 
-
-/* Media queries för att få mobilen och section 1 responsive */
-/* 
-
-@media screen and (max-width:600px)  {
-    .section1-img {
-        top:-17%;
-    }
-    .section-1 {
-        padding-bottom: 20%;
-    }
-}
-
-@media screen and (min-width:601px)  {
-    .section1-img {
-        top:-20%;
-    }
-    .section-1 {
-        padding-bottom: 20%;
-    }
-}
-
-@media screen and (min-width:1280px) {
-    .section-1 {
-        padding-bottom:10%;
-    }
-}
-
-@media screen and (min-width:1380px) {
-    .section1-img {
-        top:-16%;
-    }
-    
-
-
-} */
 .video-section {
   display: flex;
   justify-content: center; }
@@ -195,10 +137,9 @@ max-width är 900px sen går den över till 80% av sidan */
 video {
   height: 30vh;
   width: 100%;
-  object-fit: cover;
-  /* Funkar kanske inte på alla webbläsare? */ }
+  object-fit: cover; }
 
-/* mindre för mobil */
+/* mindre height för mobil */
 @media (max-width: 420px) {
   video {
     height: 18vh; } }
@@ -208,7 +149,6 @@ video {
   video {
     height: 45vh; } }
 
-/* Texten flyter ihop i 1420px uppåt */
 .section-2 {
   position: relative; }
 
@@ -297,21 +237,16 @@ footer h3, footer p {
 .text2-footer {
   width: 30%; }
 
-.footer-h3 {
-  padding-bottom: 0.5rem; }
-
-.footert1p1 {
+.footer-h3, .footert1p1, .footert2p1 {
   padding-bottom: 0.5rem; }
 
 .text2-footer {
   padding-top: 2rem; }
 
-.footert2p1 {
-  padding-bottom: 0.5rem; }
-
 .footert2p1, .footert2p2 {
   text-align: right; }
 
+/* För att anpassa footern efter mobil och större skärmar */
 @media screen and (max-width: 600px) {
   footer {
     padding: 1.5rem 0; }

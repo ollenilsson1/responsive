@@ -1,20 +1,19 @@
 .video-section {
-    display:flex;
-    justify-content:center;
+    display: flex;
+    justify-content: center;
 }
 
 video {
-    height:30vh;
-    width:100%;
-    object-fit: cover;   /* Funkar kanske inte på alla webbläsare? */
-
+    height: 30vh;
+    width: 100%;
+    object-fit: cover;  
 }
 
-/* mindre för mobil */
+/* mindre height för mobil */
 
 @media (max-width:420px)  {
     video {
-        height:18vh;
+        height: 18vh;
     }
 }
 
@@ -22,6 +21,6 @@ video {
 
 @media (min-width:1200px)  {
     video {
-        height:45vh;
+        height: 45vh;
     }
 }

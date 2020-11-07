@@ -1,24 +1,23 @@
 .voodoo {
-    font-size: 25px; 
+    font-size: 1.56rem; 
     font-size: 1.6vw;
-    text-align:center;
-    padding-top:1rem;
+    text-align: center;
+    padding-top: 1rem;
     position: relative;
-    bottom:0.85rem;
+    bottom: 0.85rem;
 
 }
 
 .header-img {
-    width:100%;
+    width: 100%;
     position: relative;
-    bottom:2.8rem;
+    bottom: 2.8rem;
     
 }
 
-
 @media screen and (min-width:700px)  {
     .voodoo {
-        bottom:0rem;
-        top:0.8rem;
+        bottom: 0rem;
+        top: 0.8rem;
     }
-}
+} 
